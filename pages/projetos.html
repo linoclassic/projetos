@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Projetos - Lendas Classic</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav-bar">
+            <div class="logo01">
+                <h1>LENDAS CLASSIC</h1>
+            </div>
+            <div class="logo02">
+                <img src="../img/logo.webp" alt="logo">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Sobre</a>
+                    </li>
+                    <li class="nav-item login02">
+                        <a href="#" class="nav-link">Entrar</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="login-button">
+                <!-- <button>
+                  <a href="#">Entrar</a>
+                </button> -->
+                <span class="login">
+                    Faça <a href="">LOGIN</a> ou <br> crie seu <a href="">CADASTRO</a>
+                </span>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <!-- <button><img src="img/menuHamburgerWhite.png" alt="" class="icon"></button> -->
+
+                <button onclick="menuShow()"><i class='bx bx-menu'></i></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <hr>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Início</a>
+
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">ENTRAR</a>
+                </li>
+                <hr>
+            </ul>
+
+            <div class="login-button">
+                <!-- <button>
+                  <a href="#">Entrar</a>
+                </button> -->
+                <span class="login">
+                    Faça <a href="">LOGIN</a> ou <br> crie seu <a href="">CADASTRO</a>
+                </span>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <section id="calculos">
+            <div class="calculadora">
+                <ul class="corpo">
+                    <li class="conteudo">
+                        <label for="n1">Número 1</label>
+                        <input type="text" id="n1" class="texto" autocomplete="off">
+                    </li>
+                    <li class="conteudo">
+                        <label for="n2">Número 2</label>
+                        <input type="text" id="n2" class="texto" autocomplete="off">
+                    </li>
+
+                    <ul class="botao-cima">
+                        <li class="conteudo bot">
+                        <button type="submit" class="button" onclick="somar()">Somar</button>
+                        </li>
+                        <li class="conteudo ">
+                            <button type="submit" class="button" onclick="subtrair()">Subtrair</button>
+                        </li>
+                    </ul>
+                    <ul class="botao-baixo">
+                        <li class="conteudo bot">
+                            <button type="submit" class="button" onclick="multiplicar()">Multiplicar</button>
+                        </li>
+                        <li class="conteudo ">
+                            <button type="submit" class="button" onclick="dividir()">Dividir</button>
+                        </li class="conteudo">
+                    </ul>
+                    <button type="reset" class="button-reset" onclick="cancelar()">Cancelar</button>
+
+                </ul>
+
+                
+
+
+
+
+
+
+
+            </div>
+        </section>
+
+    </main>
+
+    <script src="../script/script.js"></script>
+</body>
+
+</html>
