@@ -26,7 +26,7 @@
             <div class="nav-list">
                 <ul>
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link">Início</a>
+                        <a href="../index.html" class="nav-link">Início</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">Projetos</a>
@@ -59,7 +59,7 @@
             <ul>
                 <hr>
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link">Início</a>
+                    <a href="../index.html" class="nav-link">Início</a>
 
                 </li>
                 <li class="nav-item">
@@ -89,7 +89,9 @@
     <main>
         <section id="calculos">
             <div class="calculadora">
+                
                 <ul class="corpo">
+                    <h1 class="mb">Calculadora</h1>
                     <li class="conteudo">
                         <label for="n1">Número 1</label>
                         <input type="text" id="n1" class="texto" autocomplete="off">
@@ -101,7 +103,7 @@
 
                     <ul class="botao-cima">
                         <li class="conteudo bot">
-                        <button type="submit" class="button" onclick="somar()">Somar</button>
+                            <button type="submit" class="button" onclick="somar()">Somar</button>
                         </li>
                         <li class="conteudo ">
                             <button type="submit" class="button" onclick="subtrair()">Subtrair</button>
@@ -116,18 +118,70 @@
                         </li class="conteudo">
                     </ul>
                     <button type="button" class="button-reset" onclick="cancelar()">Cancelar</button>
-
                 </ul>
-
-                
-
-
-
-
-
-
-
             </div>
+        </section>
+        <hr>
+        <section class="imagens">
+         
+            <ul class="corpo_img">
+                <h1 class="mb
+                ">Gerador de Imagens Ramdom</h1>
+                <p class="mb">Exemplo de gerador de imagem utilizando o XMLHtppRequest</p>
+                <li class="conteudo_img">
+                    <button type="button" class="button" onclick="gerar()">Gerar</button>
+                </li>
+                <li class="conteudo_img">
+                    <img id="img_gen" src="">
+                </li>
+            </ul>
+        </section>
+        <hr>
+        
+        <section class="consulta">
+                <!-- <ul class="corpo">
+                    <li class="conteudo">
+                        <input type="text" id="cep" class="texto" placeholder="Digite um CEP"  name="cep">
+                    </li>
+                    <li class="conteudo">
+                        <button class="button" type="submit" onclick="buscar()">Buscar</button>
+                    </li>
+                    <li>
+                        <p id="resultado"></p>
+                    </li>
+                </ul> -->
+                <div class="form-container">
+                    <form id="cep-form">
+                        <label for="cep">CEP:</label>
+                        <input type="text" id="cep" name="cep" required>
+            
+                        <label for="estado">Estado:</label>
+                        <input type="text" id="estado" name="estado" readonly>
+            
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" id="cidade" name="cidade" readonly>
+            
+                        <label for="bairro">Bairro:</label>
+                        <input type="text" id="bairro" name="bairro" readonly>
+            
+                        <label for="endereco">Endereço:</label>
+                        <input type="text" id="endereco" name="endereco" readonly>
+            
+                        <input type="submit" value="Buscar">
+                    </form>
+            
+                    <div class="result-container">
+                        <h2>Resultado da busca</h2>
+                        <div class="result">
+                            <p><strong>CEP:</strong> <span id="result-cep"></span></p>
+                            <p><strong>Estado:</strong> <span id="result-estado"></span></p>
+                            <p><strong>Cidade:</strong> <span id="result-cidade"></span></p>
+                            <p><strong>Bairro:</strong> <span id="result-bairro"></span></p>
+                            <p><strong>Endereço:</strong> <span id="result-endereco"></span></p>
+                        </div>
+                    </div>
+                </div>
+           
         </section>
 
     </main>

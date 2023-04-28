@@ -8,6 +8,43 @@
 
 }
 
+hr{
+    width: 100%;
+    margin-top: 1em;
+    height: 1px;
+    border: 0px;
+    border-top: 5px solid #24252ab9;
+    background-color: #dddddd;
+}
+
+.button, .button-reset{
+    border-radius: 30px;
+    padding: 10px;
+    cursor: pointer;
+    transition: .1s;
+    background-color: #247ba0 ;
+    color: #fff;
+  
+  }
+
+  .button:hover, .button-reset:hover{
+    transition: .1s;
+    background-color: #247ba0f1 ;
+  }
+
+  h1{
+    font-size: 2em;
+  }
+
+  .mb{
+    margin-bottom: .5em;
+  }
+
+  @media screen and (max-width: 1000px) {
+    h1{
+        font-size: 1.5em;
+    }
+  }
 /* #region home*/
 header {
     background-color: #24252a;
@@ -232,6 +269,7 @@ header {
 
 /* #region projetos */
 
+/* #region calculadora */
 #calculos {
     display: flex;
     justify-content: center;
@@ -271,12 +309,7 @@ header {
     padding: 5px;
   }
   
-  .button, .button-reset{
-    border-radius: 30px;
-    padding: 10px;
-    cursor: pointer;
-  
-  }
+ 
   
   .botao-cima{
     display: flex;
@@ -294,4 +327,105 @@ header {
     margin-right: 1em;
     
   }
+  /* #endregion calculadora */
+  
+ /* #region imagem Aleatória */ 
+
+ .imagens{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2em;
+    
+ }
+  #img_gen{
+    width: 50%;
+    height: min-content;
+
+  }
+
+  .corpo_img{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+
+
+  .conteudo_img{
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+   
+  }
+
+
+ /* #endregion imagem Aleatória */ 
+
+ /* #region consulta */
+
+ /* .consulta{
+    margin-top: 1em;
+ }
+
+ #resultado{
+
+ } */
+
+ .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+form label, form input {
+    margin: 10px 0;
+}
+form input[type="submit"] {
+    background-color: #1e90ff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form input[type="submit"]:hover {
+    background-color: #187bcd;
+}
+.result-container {
+    display: none;
+    margin-top: 50px;
+}
+.result-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+.result p {
+    margin: 10px 0;
+}
+  /* #endregion consulta */
+
 /* #endregion projetos */
