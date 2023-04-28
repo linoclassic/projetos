@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/login.css">
     <!-- Boxicons CSS -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <title>Home - Lendas Classic</title>
+    <title>Login - Lendas Classic</title>
 </head>
 
 <body>
@@ -27,10 +27,10 @@
             <div class="nav-list">
                 <ul>
                     <li class="nav-item">
-                        <a href="" class="nav-link">Início</a>
+                        <a href="../index.html" class="nav-link">Início</a>
                     </li>
                     <li class="nav-item">
-                        <a href="pages/projetos.html" class="nav-link">Projetos</a>
+                        <a href="projetos.html" class="nav-link">Projetos</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">Sobre</a>
@@ -46,7 +46,7 @@
                   <a href="#">Entrar</a>
                 </button> -->
                 <span class="login">
-                    Faça <a href="pages/login.html">LOGIN</a> ou <br> crie seu <a href="">CADASTRO</a>
+                    Faça <a href="login.html">LOGIN</a> ou <br> crie seu <a href="">CADASTRO</a>
                 </span>
             </div>
 
@@ -108,9 +108,24 @@
     </header>
 
     <main>
-        <section id="1" class="home">
-            <img class="banner01" src="../img/1738.jpg" alt="banner01">
-        </section>
+        <div class="center">
+            <h1>Login</h1>
+            <form action="#" method="post">
+                <div class="txt_field">
+                    <input id="email" type="text" required autocomplete="off">
+                    <label>Usuário</label>
+                </div>
+                <div class="txt_field">
+                    <input id="email" type="password" required>
+                    <label>Senha</label>
+                </div>
+                <div class="pass">Esqueçeu a senha?</div>
+                <input type="submit" value="entrar">
+                <div class="signup_link">
+                    não é um membro? <a href="#">Cadastre-se</a>
+                </div>
+            </form>
+        </div>
     </main>
 
     <script src="../script/script.js"></script>
